@@ -15,7 +15,6 @@
 [![PyPI Version](https://img.shields.io/pypi/v/mimicker.svg)](https://pypi.org/project/mimicker/)
 [![Downloads](https://pepy.tech/badge/mimicker)](https://pepy.tech/project/mimicker)
 [![Last Commit](https://img.shields.io/github/last-commit/mimickerhq/mimicker.svg)](https://github.com/mimickerhq/mimicker/commits/main)
-[![Coverage](https://codecov.io/gh/mimickerhq/mimicker/branch/main/graph/badge.svg)](https://codecov.io/gh/mimickerhq/mimicker)
 [![License](http://img.shields.io/:license-apache2.0-red.svg)](http://doge.mit-license.org)
 ![Poetry](https://img.shields.io/badge/managed%20with-poetry-blue)
 
