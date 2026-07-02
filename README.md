@@ -1,5 +1,6 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mimickerhq/mimicker/main/mimicker-logo.svg" alt="Mimicker logo" width="140">
+  <img src="https://raw.githubusercontent.com/mimickerhq/mimicker/main/mimicker.jpg" alt="Mimicker logo"
+       style="width: 200px; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border: 2px solid black;">
 </p>
 
 <div align="center">
