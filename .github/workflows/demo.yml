@@ -13,12 +13,19 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install dependencies
-        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg ttyd
 
-      - name: Render GIF with VHS
-        uses: charmbracelet/vhs-action@v2
-        with:
-          path: demo.tape
+      - name: Install VHS
+        run: |
+          VHS_VERSION=$(curl -s https://api.github.com/repos/charmbracelet/vhs/releases/latest | grep '"tag_name"' | cut -d'"' -f4)
+          curl -sL "https://github.com/charmbracelet/vhs/releases/download/${VHS_VERSION}/vhs_Linux_x86_64.tar.gz" | tar -xz vhs
+          sudo mv vhs /usr/local/bin/vhs
+          vhs --version
+
+      - name: Render GIF
+        run: vhs demo.tape
 
       - name: Commit GIF back to repo
         uses: stefanzweifel/git-auto-commit-action@v5
