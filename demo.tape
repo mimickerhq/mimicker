@@ -1,38 +1,37 @@
-# Mimicker demo — render with: vhs demo.tape
-# Install VHS: brew install vhs
-
 Output demo.gif
 
 Set Shell "bash"
 Set FontSize 14
-Set Width 900
-Set Height 500
+Set Width 1200
+Set Height 600
 Set Theme "Dracula"
 Set Padding 20
+Set TypingSpeed 50ms
 
-# Install
-Type "pip install mimicker" Sleep 500ms Enter
-Sleep 3s
+# Install mimicker
+Type "pip install mimicker --quiet" Enter
+Sleep 4s
 
-# Show YAML stub
-Type "cat stubs.yaml" Enter
-Sleep 500ms
+# Write a stubs file
+Type "cat > stubs.yaml << 'EOF'" Enter
+Sleep 200ms
 Type "routes:" Enter
 Type "  - method: GET" Enter
-Type "    path: /hello" Enter
+Type "    path: /hello/world" Enter
 Type "    status: 200" Enter
 Type "    body:" Enter
 Type "      message: Hello from Mimicker!" Enter
+Type "EOF" Enter
 Sleep 1s
 
-# Serve
+# Start the server in the background
 Type "mimicker serve --config stubs.yaml &" Enter
-Sleep 2s
+Sleep 3s
 
 # Hit the endpoint
-Type "curl -s http://localhost:8080/hello | python3 -m json.tool" Enter
-Sleep 1s
+Type "curl -s http://localhost:8080/hello/world" Enter
+Sleep 2s
 
-# Show coverage report
+# Show stub coverage report
 Type "mimicker report --url http://localhost:8080" Enter
-Sleep 1s
+Sleep 3s

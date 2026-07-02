@@ -9,6 +9,8 @@
 
 </div>
 
+![mimicker demo](demo.gif)
+
 <div align="center">
 
 [![Mimicker Tests](https://github.com/mimickerhq/mimicker/actions/workflows/test.yml/badge.svg)](https://github.com/mimickerhq/mimicker/actions/workflows/test.yml)

@@ -1,0 +1,24 @@
+name: Render demo GIF
+
+on:
+  push:
+    paths:
+      - demo.tape
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Render GIF with VHS
+        uses: charmbracelet/vhs-action@v2
+        with:
+          path: demo.tape
+
+      - name: Commit GIF back to repo
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update demo GIF"
+          file_pattern: "*.gif"
