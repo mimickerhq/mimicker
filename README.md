@@ -1,6 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mimickerhq/mimicker/main/mimicker.jpg" alt="Mimicker logo"
-       style="width: 200px; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border: 2px solid black;">
+  <img src="https://raw.githubusercontent.com/mimickerhq/mimicker/main/mimicker-logo.svg" alt="Mimicker logo" width="140">
 </p>
 
 <div align="center">
@@ -15,7 +14,7 @@
 [![PyPI Version](https://img.shields.io/pypi/v/mimicker.svg)](https://pypi.org/project/mimicker/)
 [![Downloads](https://pepy.tech/badge/mimicker)](https://pepy.tech/project/mimicker)
 [![Last Commit](https://img.shields.io/github/last-commit/mimickerhq/mimicker.svg)](https://github.com/mimickerhq/mimicker/commits/main)
-[![Codecov Coverage](https://codecov.io/gh/mimickerhq/mimicker/branch/main/graph/badge.svg?token=YOUR_CODECOV_TOKEN)](https://codecov.io/gh/mimickerhq/mimicker)
+[![Coverage](https://codecov.io/gh/mimickerhq/mimicker/branch/main/graph/badge.svg)](https://codecov.io/gh/mimickerhq/mimicker)
 [![License](http://img.shields.io/:license-apache2.0-red.svg)](http://doge.mit-license.org)
 ![Poetry](https://img.shields.io/badge/managed%20with-poetry-blue)
 
@@ -71,5 +70,5 @@ Full docs at **[mimickerhq.github.io/mimicker](https://mimickerhq.github.io/mimi
 
 ## Community
 
-- [Slack](https://join.slack.com/t/mimicker/shared_invite/zt-2yr7vubw4-8Y09YyxZ5j~G2tlQ5uOXKw)
 - [Issues](https://github.com/mimickerhq/mimicker/issues)
+- [Discussions](https://github.com/mimickerhq/mimicker/discussions)

@@ -91,5 +91,5 @@ make help
 
 ## Community
 
-- [Slack](https://join.slack.com/t/mimicker/shared_invite/zt-2yr7vubw4-8Y09YyxZ5j~G2tlQ5uOXKw)
+
 - [Issues](https://github.com/mimickerhq/mimicker/issues)

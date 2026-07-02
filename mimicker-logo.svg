@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="100" fill="#185FA5"/>
+
+  <!-- Stylised bird silhouette -->
+  <!-- Body -->
+  <ellipse cx="105" cy="112" rx="32" ry="22" fill="#ffffff" opacity="0.95"/>
+  <!-- Head -->
+  <circle cx="138" cy="88" r="18" fill="#ffffff" opacity="0.95"/>
+  <!-- Beak -->
+  <polygon points="154,85 168,90 154,95" fill="#F5A623"/>
+  <!-- Wing -->
+  <ellipse cx="90" cy="108" rx="26" ry="14" fill="#d0e8f7" transform="rotate(-15 90 108)"/>
+  <!-- Eye -->
+  <circle cx="143" cy="85" r="4" fill="#185FA5"/>
+  <circle cx="144" cy="84" r="1.5" fill="#ffffff"/>
+  <!-- Tail feathers -->
+  <path d="M74,118 Q60,130 55,145 Q68,132 80,128 Q66,138 65,155 Q78,138 88,130" fill="#d0e8f7"/>
+  <!-- Leg -->
+  <line x1="105" y1="132" x2="100" y2="150" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+  <line x1="100" y1="150" x2="92" y2="158" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="100" y1="150" x2="100" y2="160" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="100" y1="150" x2="108" y2="158" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
