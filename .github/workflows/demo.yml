@@ -12,16 +12,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install dependencies
+      - name: Install VHS and dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg ttyd
-
-      - name: Install VHS
-        run: |
-          VHS_VERSION=$(curl -s https://api.github.com/repos/charmbracelet/vhs/releases/latest | grep '"tag_name"' | cut -d'"' -f4)
-          curl -sL "https://github.com/charmbracelet/vhs/releases/download/${VHS_VERSION}/vhs_Linux_x86_64.tar.gz" | tar -xz vhs
-          sudo mv vhs /usr/local/bin/vhs
+          sudo mkdir -p /etc/apt/keyrings
+          curl -fsSL https://repo.charm.sh/apt/gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/charm.gpg
+          echo "deb [signed-by=/etc/apt/keyrings/charm.gpg] https://repo.charm.sh/apt/ * *" | sudo tee /etc/apt/sources.list.d/charm.list
+          sudo apt-get update && sudo apt-get install -y vhs
           vhs --version
 
       - name: Render GIF
