@@ -47,6 +47,8 @@ nav:
       - GitLab CI: ci-cd/gitlab-ci.md
       - docker-compose: ci-cd/docker-compose.md
       - Stub Coverage Reports: ci-cd/stub-coverage-reports.md
+  - Comparisons:
+      - WireMock Alternatives for Python: comparisons/wiremock-alternatives.md
   - Reference:
       - CLI Reference: reference/cli-reference.md
       - Stub File Schema: reference/stub-file-schema.md
